@@ -82,9 +82,9 @@
     ;
   }
 
-.rating-container,.rating-container {
-    background-color: var(--Grey-900);
-    width: 50%;
+.rating-container,.submit-container {
+  background-image: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(217, 12%, 13%)); 
+    max-width: 30%;
     color: var(--Grey-500);
     padding: 2rem;
     border-radius: 2rem;
@@ -98,6 +98,7 @@
         margin: 1rem auto;
     }
 
+
 }
 .button-list {
     display: flex;
@@ -107,20 +108,46 @@
 .rating-button {
     color: var(--Grey-500);
     border-radius: 200rem;
-    padding: 0.3rem;
-    width: 2rem;
+    padding: 0.5rem;
+    width: 2.5rem;
     border: none;
     background-color: var(--Grey-900);
     
 }
   .submit-container {
     display: none;
+    text-align: center;
   }
 
   .active{
-    background-color: green;
+    background-color: white;
+    color: var(--Grey-900);
   }
   .submit-button {
     width: 100%;
     border-radius: 2rem;
+    border: none;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    background-color: var(--Orange-500);
+    padding: 0.5rem;
+  }
+  .submit-button:hover, .rating-button:hover {
+    background-color: var(--Orange-500);
+    color: white;
+    cursor: pointer;
+  }
+  .submit-button:hover{
+    background-color: white;
+    color: var(--Grey-950);
+
+  }
+  .submit-container img {
+    padding: 0 15%;
+  }
+
+  .top-text {
+    color: var(--Orange-500);
+    background: var(--Grey-900);
+    border-radius: 1rem;
   }
