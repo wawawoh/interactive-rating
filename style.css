@@ -41,7 +41,7 @@
   
   /* 6. Improve media defaults */
   img, picture, video, canvas, svg {
-    display: block;
+    /* display: block; */
     max-width: 100%;
   }
   
@@ -84,10 +84,11 @@
 
 .rating-container,.submit-container {
   background-image: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(217, 12%, 13%)); 
-    max-width: 30%;
+    max-width: 40%;
     color: var(--Grey-500);
     padding: 2rem;
     border-radius: 2rem;
+    
     
     h1, h2 {
         color: var(--White);
@@ -97,6 +98,12 @@
     p,h1,h2, .button-list {
         margin: 1rem auto;
     }
+.submit-container {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 }
@@ -143,11 +150,20 @@
 
   }
   .submit-container img {
-    padding: 0 15%;
+    
   }
 
   .top-text {
     color: var(--Orange-500);
     background: var(--Grey-900);
     border-radius: 1rem;
+  }
+
+  @media screen and (max-width:700px) {
+    .rating-container, .submit-container {
+      
+      max-width: 80%;
+     
+  }
+    
   }
